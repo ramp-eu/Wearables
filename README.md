@@ -62,6 +62,6 @@ url address and port then click on "Save".
 flow from the wearable to the Orion broker.
 
 - A notification will arrive to the phone when a message from
-the Intervention Manager will be received. Messages list is available navigatin to "Messages"
+the Intervention Manager will be received. Messages list is available by navigating to "Messages"
 ```
 
