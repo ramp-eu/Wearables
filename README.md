@@ -17,7 +17,6 @@ so that they can be displayed on the Sensing Layer App.
 - [Sensing Layer App](#title)
   - [Background](#background)
   - [Install](#install)
-  - [License](#license)
 
 ## Background
 
@@ -65,5 +64,4 @@ flow from the wearable to the Orion broker.
 - A notification will arrive to the phone when a message from
 the Intervention Manager will be received. Messages list is available navigatin to "Messages"
 ```
-
 
