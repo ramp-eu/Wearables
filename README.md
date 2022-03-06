@@ -1,97 +1,51 @@
-# <TITLE>
+# Sensing Layer App
 
-[![License: MIT](https://img.shields.io/github/license/ramp-eu/TTE.project1.svg)](https://opensource.org/licenses/MIT)
-[![Docker badge](https://img.shields.io/docker/pulls/ramp-eu/TTE.project1.svg)](https://hub.docker.com/r/<org>/<repo>/)
-<br/>
-[![Documentation Status](https://readthedocs.org/projects/tte-project1/badge/?version=latest)](https://tte-project1.readthedocs.io/en/latest/?badge=latest)
-[![CI](https://github.com/ramp-eu/TTE.project1/workflows/CI/badge.svg)](https://github.com/ramp-eu/TTE.project1/actions?query=workflow%3ACI)
-[![Coverage Status](https://coveralls.io/repos/github/ramp-eu/TTE.project1/badge.svg?branch=master)](https://coveralls.io/github/ramp-eu/TTE.project1?branch=master)
-[![Codacy grade](https://img.shields.io/codacy/grade/99310c5c4332439197633912a99d2e3c)](https://app.codacy.com/manual/jason-fox/TTE.project1)
-[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/4187/badge)](https://bestpractices.coreinfrastructure.org/projects/4187)
+
 
 ```text
-
-The Badges above demonstrate testing, code coverage
-and commitment to coding standards (since the code is linted on commit).
-
-The links need to be amended to point to the correct repo.
-
-Sign up for:
-
-- CI Test system - e.g. GitHub Actions, Travis
-- A Documentation website - e.g. ReadTheDocs
-- Static Code Analysis tool - e.g. Codacy
-- CII Best Practices https://bestpractices.coreinfrastructure.org
-
-Only CII Best Practices (and its badge) is mandatory. Any equivalent public automated tools for the other three may be used.
-
-Note that the CII Best Practices questionaire will request evidence of tooling used.
-
-```
-
-```text
-One or two sentence preamble describing the element
+The Sensing Layer App is an android application wich aim is to read biometric data from user's wearables and transmit them to the Orion broker.
+Acquired biometrics data are then elaborated by the [Fatigue Monitoring System](https://github.com/ramp-eu/Fatigue_Monitoring_System) and,
+whenever it occurs,message alerts will be sent by [Intervention Manager](https://github.com/ramp-eu/Intervention_Manager) so that they can be displayed on the Sensing Layer App.
 ```
 
 ## Contents
 
-- [<TITLE>](#title)
-  - [Contents](#contents)
+- [Sensing Layer App](#title)
   - [Background](#background)
   - [Install](#install)
-  - [Usage](#usage)
-  - [API](#api)
-  - [Testing](#testing)
   - [License](#license)
 
 ## Background
 
 ```text
-Background information and links to relevant terms
+Application has been built and is compatible with the [Empatica E4](https://www.empatica.com/en-eu/research/e4/) wristband sensor.
+Biometrics data that are transmited are:
+ - Heartrate
+ - Temperature
+ - Acceleration
+ - Galvanic skin response
 ```
 
 ## Install
 
 ```text
-How to install the component
-
-Information about how to install the <Name of component> can be found at the corresponding section of the
-[Installation & Administration Guide](docs/installationguide.md).
-
-A `Dockerfile` is also available for your use - further information can be found [here](docker/README.md)
+1. Download the SensingApp.apk file.
+2. You can either navigate to your Download folder using a file browser app or simply begin the install by clicking on the completed download in your mobile browser.
+3. Android will ask you to grant permission to either the file browser or your web browser to install the app. Grant the permission and it should bounce you back to the installation screen.
+ If not, navigate back to your Download folder after granting the permission to try again.
+4. The app should be safely installed.
 
 ```
 
 ## Usage
 
 ```text
-How to use the component
-
-Information about how to use the <Name of component> can be found in the [User & Programmers Manual](docs/usermanual.md).
-
-The following features are listed as [deprecated](docs/deprecated.md).
+- Turn on the Empatica E4 wearable.
+- Launch the Sensing Layer App.
+- From the App navigate to "Settings": enter the Orion broker url address and port then click on "Save".
+- Navigate to "Home" and press "Start".
+- The Empatica status will turn to "Connected" and the data will flow from the wearable to the Orion broker.
+- A notification will arrive to the phone when a message from the Intervention Manager will be received. Messages list is available navigatin to "Messages"
 ```
 
-## API
 
-```text
-Definition of the API interface:
-
-Information about the API of  the <Name of component> can be found in the [API documentation](docs/api.md).
-
-```
-
-## Testing
-
-```text
-How to test the component
-
-For performing a basic end-to-end test, you have to follow the step below. A detailed description about how to run tests can be found [here].
-
-> npm test
-
-```
-
-## License
-
-[MIT](LICENSE) © <TTE>
