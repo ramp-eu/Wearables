@@ -27,6 +27,8 @@ Biometrics data that are transmited are:
  - Temperature
  - Acceleration
  - Galvanic skin response
+
+ The app is compatible has been tested with Android 9, 10 and 11. It's not compatible with Android version > 11
 ```
 
 ## Install
